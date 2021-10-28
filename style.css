@@ -25,7 +25,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 6px 66px;
+  padding: 1rem 3rem;
   background-color: white;
   box-shadow: 0px 1px 2px 0px grey;
   position: sticky;
@@ -37,7 +37,7 @@ p {
   max-width: 150px;
 }
 .headerContainer .contact-call * {
-  font-size: 23px;
+  font-size: 1.2rem;
   font-weight: 500;
   color: #f5a021;
 }
@@ -49,7 +49,7 @@ p {
 /* Lander */
 
 .landerContainer {
-  height: 82vh;
+  height: 75vh;
 }
 
 .landerContent {
@@ -127,7 +127,7 @@ p {
 }
 
 .connectionsButtons button {
-  width: 20%;
+  width: auto;
   margin: 0px 30px;
 }
 
@@ -151,12 +151,13 @@ p {
   font-weight: bold;
 }
 .overviewData .image {
-  width: 40%;
+  width: 500px;
   text-align: center;
+  height: 500px;
 }
 
 .overviewData img {
-  width: 82%;
+  width: 80%;
   height: 80%;
   border-radius: 50%;
 }
@@ -307,74 +308,53 @@ p {
   width: 30%;
 }
 
-
-/* Media queries */
-
-
-/* 
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-  
-  /* CSS */
-  
-}
-
-/* 
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
 @media (min-width: 320px) and (max-width: 480px) {
-  
-  .headerContainer .contact-call * {
-    color: red;
+  .headerContainer {
+    padding: 1rem 1rem;
   }
-  
+
+  .connectionsButtons button {
+    margin: 0px 10px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .overviewData {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .overviewData .data {
+    width: 90%;
+  }
+
+  .overviewData div{
+    margin: 10px 0px;
+  }
+
+  .serviceContainer {
+    flex-direction: column;
+  }
+
+  .serviceContainer div {
+    width: auto;
+    padding: 0px 10px;
+  }
+
+  .contact {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact .image {
+    width: 60%;
+  }
+
+  .contact .image img {
+    width: 90%;
+  }
+
+  .contact .form {
+    width: 80%;
+  }
 }
